@@ -3,15 +3,91 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
-  background: #be9de4;
+  display: flex;
 }
+
+
+.full-page
+{
+    height: 100%;
+	width: 100%;
+  background-color: #e5d0fd;
+	/*background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/bg-2.jpg);
+	*/
+  background-position: center;
+	background-size: cover;
+	position: absolute;
+  align-items: center;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(237, 230, 255, 0.61);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #490093;
+    font-family: sans-serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: rgb(114, 75, 133);
+}
+nav ul li a:hover
+{
+    color: rgb(103, 68, 119);
+}
+a
+{
+    text-decoration: none;
+    color: #b96bb8;
+    font-size: 32px;
+    font-weight: 500;
+    text-shadow: 2px;
+}
+
+
+
 .drag-area{
   border: 2px dashed #fff;
   height: 500px;
@@ -19,8 +95,10 @@ body{
   border-radius: 5px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
   flex-direction: column;
+  margin: auto;
+  margin-top: 10%;
 }
 .drag-area.active{
   border: 2px solid #fff;
